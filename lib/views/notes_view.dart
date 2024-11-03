@@ -9,8 +9,9 @@ class NotesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+      
       floatingActionButton: FloatingActionButton(
+        
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
         ),
@@ -18,6 +19,7 @@ class NotesView extends StatelessWidget {
         backgroundColor: KprimaryColor, // FloatingActionButton Color
         onPressed: () {
           showModalBottomSheet(
+            isScrollControlled: true,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
