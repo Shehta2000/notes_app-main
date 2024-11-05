@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/widgets/custom_app_bar.dart';
 import 'package:notes_app/views/widgets/custom_text_field.dart';
 
 class EditNoteViewBody extends StatelessWidget {
-  const EditNoteViewBody({super.key});
+  const EditNoteViewBody({super.key, required NoteModel note});
 
   @override
   Widget build(BuildContext context) {
